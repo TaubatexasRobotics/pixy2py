@@ -11,12 +11,12 @@ class Link:
         :returns: Returns state
         """
         pass
-    
+
     @abstractmethod
     def close(self) -> None:
         """Closes link"""
         pass
-    
+
     @abstractmethod
     def receive(self, buffer: bytearray, length: int, cs: Checksum) -> int:
         """Receives and reads specified length of bytes over link
